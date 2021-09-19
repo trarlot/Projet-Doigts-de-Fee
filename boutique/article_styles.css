@@ -1,0 +1,462 @@
+:root {
+    --color-primary-light: #fff9e8;
+    --color-secondary-pink: #fcf1fd;
+    --color-natural: hsl(112, 100%, 97%);
+    --color-luxury: #e9cf7f;
+    font-family: "Global_Font";
+    transition: all 0.3s;
+}
+@font-face {
+  font-family: "Luxury_Font";
+  src: url("../ressources/KhatijaCalligraphy.ttf") ;
+}
+@font-face {
+  font-family: "Global_Font";
+  src: url("../ressources/NOIR_Font/Noir_regular.otf") ;
+}
+.section-card::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+}
+.section-card::-webkit-scrollbar-button {
+    width: 2px;
+    height: 2px;
+}
+.section-card::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.205);
+    border: 31px none #ffffff;
+    border-radius: 5px;
+    height: 10px;
+}
+.section-card::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+.section-card::-webkit-scrollbar-thumb:active {
+    background: #a3a3a3;
+}
+.section-card::-webkit-scrollbar-track {
+    background: var(--LightBlue);
+    border: 5px solid var(--LightBlue);
+}
+.section-card::-webkit-scrollbar-track:hover {
+    background: var(--LightBlue);
+}
+.section-card::-webkit-scrollbar-track:active {
+    background: var(--LightBlue);
+}
+.section-card::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+input { 
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    outline: none;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+    border-bottom: solid rgba(255, 255, 255, 0) 3px;
+}
+
+
+
+
+#manucure{
+    color: rgba(117, 115, 115, 0.281) 3px;
+}
+
+.onglets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    width: 50em;
+    overflow: hidden;
+    transition: 0.3s;
+    
+
+}
+.onglets input{
+    margin-top: 1em;
+    padding: 1em;
+    width: 12em;
+    margin: .5em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
+    transition: 0.3s;
+    
+    
+
+}
+.onglets input:hover{
+    transform: translate(-2.5px, -5px);
+    box-shadow: 8px 8px 10px 0px rgba(128, 128, 128, 0.356);
+    background-color: #f8e6af;
+
+}
+
+
+
+
+
+section{
+    display: flex;
+    margin-top: 5em;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    height: 50%;
+    
+}
+
+
+.article-card{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 90%;
+    height: 60%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.171);
+    padding: 2em;
+}
+
+.article-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border: solid rgba(0, 0, 0, 0.205) 1px;
+    margin-right: 10%;
+    
+   
+}
+.article-img img{
+    width: 13em;
+    height: 13em;
+    overflow: hidden;
+}
+.article-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 50%;
+    
+}
+
+.article-info h2{
+    font-size: 18px;
+    text-align: center;
+    margin: unset;
+    width: 100%;
+    color: black;
+    margin-bottom: 1em;
+}
+.prix{
+    color: var(--color-luxury) ;
+    margin-top: 1em;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+.prix_details{
+    color: var(--color-luxury) ;
+    margin-top: 1em;
+    font-size: 20px;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 1em;
+}
+.livraison{
+    text-align: center;
+}
+
+mark{
+    background-color: unset;
+    color: grey;
+    padding: 0em 2em 0em 2em;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 18%;
+    height: 18em;
+    border: solid black 1px;
+    padding: 1em;
+    margin:0% 0% 0% 10%;
+
+
+}
+hr{
+    width: 100%;
+    height: 1px;
+}
+label{
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+select{
+    height: 2em;
+}
+#buy{
+    display: flex;
+    font-size: 13px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--color-luxury);
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 1em;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.349);
+    border: none;
+    text-decoration: unset;
+    border-radius: 0.3;
+    color: white;
+    height: 2em;
+}
+#buy:hover{
+    background-color: #ebdcad;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    bottom:0;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.267);
+    background-color: rgb(255, 248, 239);
+    
+}
+
+
+@media screen and (max-width: 1050px){
+    
+    .onglets{
+        width: 40em;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+
+
+    
+    .section-card {
+       align-items: unset;
+        width: 100%;
+        height: 38em;
+        padding: 2em 0em 2em 0em;
+    
+    }
+    .section-card .card{
+        margin: 0.6em;
+      
+    }
+    .section-card h2{
+        margin-top: 1em;
+    }
+    .navbar{
+        display: none;
+    }
+    .title{
+        width: 75%;
+        margin-left: 10% ;
+    }
+    section{
+        height: 40em;
+        
+        width: 100%;
+
+    }
+    body{
+        margin: unset;
+
+    }
+    
+    
+    hr{
+        margin: unset;
+    }
+    .onglets{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+      
+    @keyframes darkback {
+        from {
+            background-color: rgba(0, 0, 0, 0.001);
+            transform: translate(0em,80em);
+            
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.466);
+            transform: translate(0em,20em);
+        }
+        
+    }
+    @keyframes slide-down {
+        from {
+            transform: translate(0em,-35em);
+
+        }
+        to {
+            transform: translate(0em,0em);
+        }
+        
+    }
+    @keyframes cross1 {
+        from {
+            transform: translate(0px,0px) rotate(0deg);
+            
+        }
+        to {
+            transform: translate(0px,10px) rotate(45deg);
+            
+        }
+        
+    }
+    @keyframes cross2 {
+        from {
+            transform: translate(0px,0px) rotate(0deg);
+            
+        }
+        to {
+            transform: translate(0px,-10px) rotate(-45deg);
+            
+        }
+        
+    }
+     @keyframes cross3 {
+        from {
+            transform: scale(1,1);
+            
+        }
+        to {
+           
+            transform: scale(0,0);
+        }
+        
+    }
+    .cross1{
+        animation-name: cross1;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+    .disabled{
+        animation-name: cross3;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+
+    .cross2{
+        animation-name: cross2;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+    .slide-down{
+        animation-name: slide-down;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        z-index: 5;
+    }
+    .toggle{
+        animation-name: darkback;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    
+
+    }
+    
+    
+    .background{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        width:100%;
+        height: 100%;
+        transform: translate(0em,80em);
+        background-color: rgba(0, 0, 0, 0.466);
+    }
+}
+
+@media screen and (max-width: 540px){
+    
+    
+    body{
+        align-items: unset;
+        height: 40em;
+    }
+    .section-card{
+        height: 20em;
+    }
+    .soin .img img{
+        height: 8em; 
+          
+    }
+
+    .soin .img{
+        height: 50%;
+    
+    }
+    .article{
+        display: none;
+    }
+    .section-card{
+        transform: translate(0em, 2em);
+        height: 37em;
+        
+    }
+    .onglets{
+        width: 40em;
+    }
+    .onglets button{
+        font-size: 12px;
+    }
+    .card{
+        width: 10em;
+        height: 10em;
+        
+    }
+    
+    
+    .info p{
+        margin-top: unset;
+        width: 50%;
+        align-items: center;
+
+    }
+    p.prix{
+        margin:unset;
+    }
+    .info h2{
+        font-size: 10px;
+        margin-top: 2em;
+        width: 100%;
+
+    }
+}

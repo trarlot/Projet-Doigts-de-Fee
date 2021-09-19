@@ -1,0 +1,153 @@
+section{
+    display: flex;
+    height: 100%;
+    
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5em 0em 0em 1em;
+    width: 70%;
+    height: fit-content;
+    padding: 2em 0em 2em 0em;
+    max-height: 28em;
+    overflow: scroll;
+    border: solid white 5px;
+    background-color: white;
+    border-top: solid 1px rgba(0, 0, 0, 0.425);
+}
+.content::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+}
+.content::-webkit-scrollbar-button {
+    width: 2px;
+    height: 2px;
+}
+.content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.205);
+    border: 31px none #ffffff;
+    border-radius: 5px;
+    height: 10px;
+}
+.content::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+.content::-webkit-scrollbar-thumb:active {
+    background: #a3a3a3;
+}
+
+.content::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0.5em 2em .5em 2em;
+    padding: 1em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.267);
+   
+    transition: 0.3s;
+}
+.articles:hover{
+    transform: translate(-5px,-5px);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.267);
+    transition: 0.3s;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.img{
+    display: flex;
+    width: 7em;
+    height: 7em;
+
+}
+.info{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.name{
+    width: 70%;
+    font-size: larger;
+    color: rgb(36, 26, 97);
+    
+}
+.a-close{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    transform: translate(3em);
+    
+}
+.close{
+    padding: .5em;
+    text-decoration: none;
+    color: black;
+}
+.close:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+.quantity{
+    display: flex;
+    width: 85%;
+    align-items: center;
+}
+.price{
+    width: 100%;
+    color: var(--color-luxury) ;
+    font-size: 25px;
+    margin-left: 1em ;
+}
+select{
+    margin-left: 1em;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+}.total{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: fit-content;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.total h2{
+    display: flex;
+    width: 100%;
+    height: 2em;
+}
+.calcul{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.205);
+    width: 100%;
+    margin: 5em 2em 0em 2em;
+    
+}
+
+.total hr{
+    width: 100%;
+    text-align: center;
+}

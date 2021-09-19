@@ -1,0 +1,336 @@
+:root {
+    --color-primary-light: #fff9e8;
+    --color-secondary-pink: #fcf1fd;
+    --color-natural: hsl(112, 100%, 97%);
+    --color-luxury: #e9cf7f;
+    font-family: "Global_Font";
+    transition: all 0.3s;
+}
+@font-face {
+  font-family: "Luxury_Font";
+  src: url("../ressources/KhatijaCalligraphy.ttf") ;
+}
+@font-face {
+  font-family: "Global_Font";
+  src: url("../ressources/NOIR_Font/Noir_regular.otf") ;
+}
+.section-card::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+}
+.section-card::-webkit-scrollbar-button {
+    width: 2px;
+    height: 2px;
+}
+.section-card::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.205);
+    border: 31px none #ffffff;
+    border-radius: 5px;
+    height: 10px;
+}
+.section-card::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+.section-card::-webkit-scrollbar-thumb:active {
+    background: #a3a3a3;
+}
+.section-card::-webkit-scrollbar-track {
+    background: var(--LightBlue);
+    border: 5px solid var(--LightBlue);
+}
+.section-card::-webkit-scrollbar-track:hover {
+    background: var(--LightBlue);
+}
+.section-card::-webkit-scrollbar-track:active {
+    background: var(--LightBlue);
+}
+.section-card::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+input { 
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    outline: none;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+    border-bottom: solid rgba(255, 255, 255, 0) 3px;
+}
+button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    outline: none;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+    border-bottom: solid rgba(255, 255, 255, 0) 3px;
+}
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 50em;
+
+
+}
+#boutique{
+    border-bottom: solid var(--color-luxury);
+}
+
+.onglets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    width: 50em;
+    overflow: hidden;
+    transition: 0.3s;
+    
+
+}
+.onglets input{
+    margin-top: 1em;
+    padding: 1em;
+    width: 12em;
+    margin: .5em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
+    transition: 0.3s;
+    
+
+}
+.onglets input:hover{
+    transform: translate(-2.5px, -5px);
+    box-shadow: 8px 8px 10px 0px rgba(128, 128, 128, 0.356);
+    background-color: #f8e6af;
+
+}
+.selected{
+    background-color:#f8e6af;
+}
+.white{
+    background-color: white;
+}
+#title_section{
+    font-size: 23px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: unset;
+    height: 1em;
+}
+
+.section-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 100%;
+    padding-top: 2em;
+    overflow: scroll;
+    box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.356);
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 15em;
+    height: 20em;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.37);
+    margin: 1.5em 2em 8em 2em;
+    transition: 0.3s;
+    overflow: hidden;
+
+}
+
+.card:hover{
+    transform: translate(0px, -7px);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.37);
+    
+}
+
+
+h2{
+    font-size: 12px;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    padding: 0em 1em 0em;
+}
+
+.info p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.548);
+    margin-block-start: unset;
+    margin-block-end: unset;
+    font-size: 12px;
+    margin-top: 1em;
+}
+p.prix{
+    color: var(--color-luxury) ;
+    margin-top: .2em;
+    font-size: 18px;
+    margin-bottom: .2em;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+     width: 100%;
+    height: 100%;
+}
+.img{
+    display: flex;
+    padding: 2em;
+    height: 50%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    height: 36em;
+    
+    
+}
+
+
+
+
+
+@media screen and (max-width: 1050px){
+    
+    .onglets{
+        width: 40em;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+
+
+    
+    .section-card {
+       align-items: unset;
+        width: 100%;
+        height: 38em;
+        padding: 2em 0em 2em 0em;
+    
+    }
+    .section-card .card{
+        margin: 0.6em;
+      
+    }
+    .section-card h2{
+        margin-top: 1em;
+    }
+    .navbar{
+        display: none;
+    }
+    .title{
+        width: 75%;
+        margin-left: 10% ;
+    }
+    section{
+        height: 40em;
+        width: 100%;
+
+    }
+    body{
+        margin: unset;
+
+    }
+    
+    header{
+        width: 100%;
+        z-index: 5;
+    }
+    hr{
+        margin: unset;
+    }
+    .onglets{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 540px){
+    
+    
+    body{
+        align-items: unset;
+        height: 40em;
+    }
+    .section-card{
+        height: 20em;
+    }
+    .soin .img img{
+        height: 8em; 
+          
+    }
+
+    .soin .img{
+        height: 50%;
+    
+    }
+    .onglets{
+        width: 40em;
+    }
+    .onglets button{
+        font-size: 12px;
+    }
+   
+}
