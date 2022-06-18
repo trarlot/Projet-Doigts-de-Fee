@@ -1,104 +1,99 @@
 :root {
-    --color-primary-light: #fff9e8;
-    --color-secondary-pink: #fcf1fd;
-    --color-natural: hsl(112, 100%, 97%);
-    --color-luxury: #e9cf7f;
-    font-family: "Global_Font";
-    transition: all 0.3s;
-    color: black;
+  --color-primary-light: #fff9e8;
+  --color-secondary-pink: #fcf1fd;
+  --color-natural: hsl(112, 100%, 97%);
+  --color-luxury: #e9cf7f;
+  font-family: 'Global_Font';
+  transition: all 0.3s;
+  color: black;
 }
 @font-face {
-  font-family: "Luxury_Font";
-  src: url("../ressources/KhatijaCalligraphy.ttf") ;
+  font-family: 'Luxury_Font';
+  src: url('../ressources/KhatijaCalligraphy.ttf');
 }
 @font-face {
-  font-family: "Global_Font";
-  src: url("../ressources/NOIR_Font/Noir_regular.otf") ;
+  font-family: 'Global_Font';
+  src: url('../ressources/NOIR_Font/Noir_regular.otf');
 }
 
-body{
-    position: relative;
-    margin: unset;
-
+body {
+  position: relative;
+  margin: unset;
 }
-button { 
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    outline: none;
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
 
-    background: transparent;
+  background: transparent;
 
-    /* inherit font & color from ancestor */
-    color: inherit;
-    font: inherit;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
 
-    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-    line-height: normal;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
 
-    /* Corrects font smoothing for webkit */
-    -webkit-font-smoothing: inherit;
-    -moz-osx-font-smoothing: inherit;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
 
-    /* Corrects inability to style clickable `input` types in iOS */
-    -webkit-appearance: none;
-    
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
 }
 
-header{
-    display: flex;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0px;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
-    z-index: 5;
-    
+header {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.144);
+  z-index: 5;
 }
-.icon{
-    display: flex;
-    background-color: white;
-    align-items: center;
-    height: 1em;
-    padding: .5em .5em .5em 0.5em;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.349);
-    z-index: 999;
-    
+.icon {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  height: 1em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.349);
+  z-index: 999;
 }
-.icon:hover{
-    background-color: rgba(0, 0, 0, 0.062);
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.062);
 }
-.icon:active{
-    box-shadow: none;
+.icon:active {
+  box-shadow: none;
 }
-.icon img{
-    width: 15px;
-    height: 15px;
+.icon img {
+  width: 15px;
+  height: 15px;
 }
 
+h1 {
+  display: flex;
+  font-family: 'Luxury_Font';
+  font-size: 20px;
 
-h1{
-    display: flex;
-    font-family: "Luxury_Font";
-    font-size: 20px;
-    
-    align-items: center;
+  align-items: center;
 }
-.burger{
-    display: none;
-    margin-right: 30%;
+.burger {
+  display: none;
+  margin-right: 30%;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 .navbar {
   display: flex;
@@ -107,215 +102,188 @@ h1{
   padding: 0em 30% 0em 30%;
 }
 
-.navbar a{
+.navbar a {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  width: 100%;
+  color: black;
+  outline: none;
+  text-decoration: none;
+  margin: 0em 0.5em 1em 0.5em;
+  white-space: nowrap;
+  border-bottom: solid rgb(255, 255, 255) 3px;
+}
+.dote {
+  position: absolute;
+  z-index: 9999;
+  color: rgb(236, 78, 78);
+  font-size: 35px;
+  transform: translate(13px, -16px);
+  margin: unset;
+}
+.navbar-burger {
+  display: none;
+}
+.navbar a:hover {
+  border-bottom: solid var(--color-luxury) 3px;
+}
+hr {
+  width: 100%;
+  margin: unset;
+}
+
+.lock-scroll {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .title {
+    width: 65%;
+    margin-left: unset;
+  }
+
+  header {
+    width: 100%;
+    z-index: 5;
+  }
+  hr {
+    margin: unset;
+  }
+  .burger {
+    display: flex;
+    flex-wrap: wrap;
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    align-items: center;
+    border-radius: 0.5em;
+    z-index: 50;
+    margin: 0.5em;
+  }
+  .burger div {
+    width: 5em;
+    border: solid black 1px;
+    border-radius: 0.5em;
+  }
+  .burger_content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10%;
+  }
+  .navbar-burger {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30em;
+    background-color: white;
+    z-index: 999;
+    justify-content: center;
+    padding-bottom: 1em;
+    transform: translate(0em, -35em);
+  }
+  .navbar-burger a {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.288);
+    justify-content: center;
+    margin: 1em 20% 1em 20%;
+    padding-bottom: unset;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+  }
+  .navbar-burger h2 {
+    font-size: 20px;
     display: flex;
     justify-content: center;
-    padding: 1em;
     width: 100%;
+    padding-bottom: 1em;
+    z-index: 999;
     color: black;
-    outline: none;
-    text-decoration: none;
-    margin: 0em .5em 1em .5em;
-    white-space: nowrap;
-    border-bottom: solid rgb(255, 255, 255) 3px;
+  }
+  @keyframes darkback {
+    from {
+      background-color: rgba(0, 0, 0, 0.001);
+      transform: translate(0em, 100em);
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0.466);
+      transform: translate(0em, 40em);
+    }
+  }
+  @keyframes slide-down {
+    from {
+      transform: translate(0em, -40em);
+    }
+    to {
+      transform: translate(0em, 12em);
+    }
+  }
+  @keyframes cross1 {
+    from {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    to {
+      transform: translate(0px, 10px) rotate(45deg);
+    }
+  }
+  @keyframes cross2 {
+    from {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    to {
+      transform: translate(0px, -10px) rotate(-45deg);
+    }
+  }
+  @keyframes cross3 {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(0, 0);
+    }
+  }
+  .cross1 {
+    animation-name: cross1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .disabled {
+    animation-name: cross3;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
 
+  .cross2 {
+    animation-name: cross2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .slide-down {
+    animation-name: slide-down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+  }
+  .toggle {
+    animation-name: darkback;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
 
-}
-.dote{
-    position: absolute;
-    z-index: 9999;
-    color: rgb(236, 78, 78);
-    font-size:35px; 
-    transform: translate(13px,-16px);
-    margin: unset;
-    
-}
-.navbar-burger{
-    display: none;
-}
-.navbar a:hover{
-    border-bottom: solid var(--color-luxury) 3px;
-}
-hr{
+  .background {
+    display: flex;
+    position: fixed;
+    justify-content: center;
     width: 100%;
-    margin: unset;
+    height: 100%;
+    transform: translate(0em, 100em);
+    background-color: rgba(0, 0, 0, 0.466);
+  }
 }
-
-.lock-scroll{
-    overflow: hidden;
-}
-
-@media screen and (max-width: 800px){
-
-
-    .navbar{
-        display: none;
-    }
-    .title{
-        width: 65%;
-        margin-left: unset ;
-    }
-
-    header{
-        width: 100%;
-        z-index: 5;
-    }
-    hr{
-        margin: unset;
-    }
-    .burger{
-        display: flex;
-        flex-wrap: wrap;
-        width: 3em;
-        height: 3em;
-        padding: .5em;
-        align-items: center;
-        border-radius: .5em;
-        z-index: 50;
-        margin: 0.5em;
-    }
-    .burger div{
-        width: 5em;
-        border: solid black 1px;
-        border-radius: 0.5em;
-    }
-    .burger_content{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 10%;
-
-    }
-    .navbar-burger{
-        display: flex;
-        position: fixed;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 30em;
-        background-color: white;
-        z-index: 999;
-        justify-content: center;
-        padding-bottom: 1em;
-        transform: translate(0em,-35em);
-        
-    }
-    .navbar-burger a{
-        display: flex;
-        width: 100%;
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.288);
-        justify-content: center;
-        margin: 1em 20% 1em 20%;
-        padding-bottom: unset;
-        text-decoration: none;
-        color: black;
-        align-items: center;
-    
-        
-    }
-    .navbar-burger h2{
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding-bottom: 1em;
-        z-index: 999;
-        color: black;
-      
-    }
-    @keyframes darkback {
-        from {
-            background-color: rgba(0, 0, 0, 0.001);
-            transform: translate(0em,100em);
-            
-        }
-        to {
-            background-color: rgba(0, 0, 0, 0.466);
-            transform: translate(0em,40em);
-        }
-        
-    }
-    @keyframes slide-down {
-        from {
-            transform: translate(0em,-40em);
-
-        }
-        to {
-            transform: translate(0em,12em);
-        }
-        
-    }
-    @keyframes cross1 {
-        from {
-            transform: translate(0px,0px) rotate(0deg);
-            
-        }
-        to {
-            transform: translate(0px,10px) rotate(45deg);
-            
-        }
-        
-    }
-    @keyframes cross2 {
-        from {
-            transform: translate(0px,0px) rotate(0deg);
-            
-        }
-        to {
-            transform: translate(0px,-10px) rotate(-45deg);
-            
-        }
-        
-    }
-     @keyframes cross3 {
-        from {
-            transform: scale(1,1);
-            
-        }
-        to {
-           
-            transform: scale(0,0);
-        }
-        
-    }
-    .cross1{
-        animation-name: cross1;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-    }
-    .disabled{
-        animation-name: cross3;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-    }
-
-    .cross2{
-        animation-name: cross2;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-}
-    .slide-down{
-        animation-name: slide-down;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-        z-index: 5;
-    }
-    .toggle{
-        animation-name: darkback;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-    
-
-    }
-    
-    
-    .background{
-        display: flex;
-        position: fixed;
-        justify-content: center;
-        width:100%;
-        height: 100%;
-        transform: translate(0em,100em);
-        background-color: rgba(0, 0, 0, 0.466);
-    }
-}
-

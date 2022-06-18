@@ -92,6 +92,3 @@ include('../utils/database.php')
 <script>
     call_script();
 </script>
-<?php
-
-?>

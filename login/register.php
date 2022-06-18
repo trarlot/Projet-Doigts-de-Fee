@@ -45,7 +45,8 @@ session_destroy();
                 ?>
                 <input class="red" placeholder="E-mail" type="email" name="email" required>
                 <input placeholder="Mot de passe" type="password" name="password" required>
-                <input class='submit' type="submit">
+
+                <input class='submit' type="submit" value="S'inscrire">
 
             </form>
         </section>

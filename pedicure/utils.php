@@ -19,7 +19,7 @@
         while ($res = $query->fetch()) {
             echo '<button class="' . $res['id'] . ' naturelle"><div class="card ' . $res['id'] . '">
                     <div class="img">
-                        <img src="../ressources/pedicure-naturelle.jpg" alt="manucure">
+                        <img class="pedicure" src="../ressources/pedicure-naturelle.jpg" alt="pedicure">
                     </div>
                     <div class="info">
                         <h2>' . $res['nom'] . '</h2>
@@ -36,7 +36,7 @@
         while ($res = $query->fetch()) {
             echo '<button class="' . $res['id'] . ' soin"><div class="card ' . $res['id'] . '">
                     <div class="img">
-                        <img src="../ressources/manucure-soin.jpg" alt="manucure">
+                        <img class="pedicure" src="../ressources/manucure-soin.jpg" alt="pedicure">
                     </div>
                     <div class="info">
                         <h2>' . $res['nom'] . '</h2>

@@ -43,7 +43,7 @@ session_destroy();
                 }
 
                 ?>
-                <input class="submit" type="submit">
+                <input class="submit" type="submit" value="Se connecter">
 
             </form>
         </section>

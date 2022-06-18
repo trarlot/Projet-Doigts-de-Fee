@@ -43,9 +43,6 @@ include('../utils/cookies.php');
 
     <section>
         <div class="naturelle section-card ">
-            <form>
-
-            </form>
             <?php
             //Si aucune requete POST est presente, on affiche la section crème, qui sera la section par defaut
             if (!isset($_POST['cream']) && !isset($_POST['huile']) && !isset($_POST['vernis'])) {

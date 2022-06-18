@@ -1,0 +1,45 @@
+body{
+   margin: 0;
+}
+header{
+    height: 25em;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    transform: translateY(-15em);
+    
+}
+.banner{
+    display: flex;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: grey;
+    height: 2em;
+    color: white;
+}
+.fig{
+    width: 28em;
+}
+
+.products:hover .fig{
+    opacity: 50%;
+}
+.products:hover .fig:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    margin: 0em 2em 0em 2em;
+    color: white;
+    
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
